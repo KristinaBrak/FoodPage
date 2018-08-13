@@ -1,38 +1,103 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
+    <!-- sets the width of the page to follow the screen-width of the device
+     and the initial zoom level when the page is first loaded by the browser -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS/ for bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <title>Tasty Plate</title>
   </head>
+
   <header>
     <h1>Eating Today</h1>
   </header>
-  <nav id="main_navigation">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Recipes</a></li>
-      <li><a href="#">Nutrition</a></li>
-    </ul>
-  </nav>
-  <article>
-    <section>
-      <header>
-        <h1>Banana pie recipe</h1>
-        <div id="article_subtitle">
-          <h2>From </h2><a href="https://www.allrecipes.com/recipe/12151/banana-cream-pie-i/"><h2>allrecipes.com </h2></a> <!--css -->
+  <section>
+    <!-- navigation bar set to scale by the page width -->
+    <nav id="main_navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col"><a href="#">Home</a></div>
+          <div class="col"><a href="#">Recipes</a></div>
+          <div class="col"><a href="#">Nutrition</a></div>
         </div>
-      </header>
-      <div class="article_content">
-        <img src="Pictures\bananaPie.jpg" alt="banana_pie"/>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dignissimos harum, ad officiis architecto iure ullam libero et amet sit?
-        </p>
       </div>
-    </section>
-    <aside id="side_menu"></aside>
-  </article>
-  <body>
+    </nav>
+  </section>
 
-  </body>
-  <footer></footer>
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <article>
+        <section>
+
+          <header>
+            <div class="contaier">
+              <div class="row">
+                <div class="col-12">
+                  <h1>Banana pie recipe</h1> <!-- article name -->
+                </div>
+              </div>
+            </div>
+
+            <div id="article_subtitle">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h2>From </h2><a href="https://www.allrecipes.com/recipe/12151/banana-cream-pie-i/"><h2>allrecipes.com </h2></a> <!--css -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <div class="container">
+            <div class="article_content">
+              <div class="row">
+                <div class="col-7">
+                  <img src="Pictures\bananaPie.jpg" alt="banana_pie"/>
+                </div>
+                <div class="col-5">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </article>
+    </div>
+    <div class="col-4">
+      <section>
+        <aside id="side_menu">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt rerum quia fugiat cumque recusandae commodi vitae, doloremque, voluptates rem tempore in error hic maiores sit eius corporis perspiciatis laudantium?</p>
+        </aside>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <body></body>
+
+  <section>
+    <footer>
+      <div class="footer_navigation">
+        <div class="container">
+          <div class="row">
+            <div class="col-4"><a href="#">About us</a></div>
+            <div class="col-4"><a href="#">Contact</a></div>
+            <div class="col-4"><a href="#">Privacy</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
 </html>
